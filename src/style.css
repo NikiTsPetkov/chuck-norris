@@ -1,0 +1,72 @@
+body {
+  background-color: rgba(166, 168, 197, 0.2);
+}
+.chuck {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.face {
+  align-self: flex-start;
+  width: 40%;
+}
+.cloud {
+  position: relative;
+  width: 80%;
+}
+p {
+  width: 80%;
+  font-style: italic;
+}
+h1 {
+  z-index: 100;
+  position: absolute;
+  left: 39%;
+  top: 30vh;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1rem;
+    left: 40%;
+    top: 50%;
+    width: 100%;
+    /* background-color: blue; */
+  }
+  .face {
+    display: none;
+  }
+  .cloud {
+    align-self: flex-end;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  h1 {
+    /* font-size: 1.1rem; */
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    /* background-color: blue; */
+  }
+  .chuck {
+    flex-direction: row-reverse;
+  }
+  .face {
+    /* width: 40%; */
+    align-self: flex-end;
+  }
+  .cloud {
+    width: 60%;
+    overflow: hidden;
+  }
+  p {
+    align-self: flex-start;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 30%;
+    font-size: 1rem;
+  }
+}
